@@ -1,1 +1,1 @@
-Alunos: Mateus Manoel dos Santos Alves e Lucas Gabriel Campolim de Oliveira
+Alunos: [Lucas Campolim](https://github.com/lucascampolimm) e [Mateus Manoel](https://github.com/mateusmanoel321)
