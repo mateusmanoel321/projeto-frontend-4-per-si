@@ -1,1 +1,12 @@
-<p>listagem-produto works!</p>
+<h2>Listagem de Produtos</h2>
+<ul>
+    <li *ngFor="let produto of produtos">
+        <strong>{{ produto.nome }}</strong>
+        Descrição: {{ produto.descricao }}
+        Preço: R$ {{ produto.preco }}
+        Quantidade em Estoque: {{ produto.quantidadeEstoque }}
+        Unidade de Medida: {{ produto.unidadeMedida }}
+        Fornecedor: {{ produto.fornecedor}}
+        Ativo: {{ produto.ativo ? 'Sim' : 'Não' }}
+    </li>
+</ul>

@@ -1,0 +1,31 @@
+.formulario {
+    width: 300px; /* Largura do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do formulário */
+    padding: 20px; /* Espaçamento interno para afastar o conteúdo das bordas */
+    border: 1px solid #ccc; /* Borda para destacar o formulário */
+    border-radius: 10px; /* Cantos arredondados para uma aparência mais suave */
+}
+
+/* Estilos adicionais para os rótulos e inputs */
+label {
+    display: block; /* Coloca os rótulos em uma linha separada */
+    margin-bottom: 10px; /* Espaço entre rótulos */
+}
+
+input {
+    width: 30%; /* Preenche toda a largura do container pai */
+    padding: 5px; /* Espaçamento interno para afastar o texto das bordas */
+    margin-bottom: 15px; /* Espaço entre inputs */
+    border: 1px solid #ccc; /* Borda para inputs */
+    border-radius: 5px; /* Cantos arredondados para inputs */
+}
+
+button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Cantos arredondados para o botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
