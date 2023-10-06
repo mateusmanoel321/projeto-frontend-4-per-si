@@ -9,7 +9,6 @@ import { Produto } from "src/app/produto.model";
 })
 export class ListagemProdutoComponent implements OnInit {
   produtos: Produto[] = [];
-
   constructor(private produtoService: ProdutoService) {}
 
   ngOnInit() {

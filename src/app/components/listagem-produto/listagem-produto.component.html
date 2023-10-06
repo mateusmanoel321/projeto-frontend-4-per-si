@@ -1,12 +1,25 @@
 <h2>Listagem de Produtos</h2>
-<ul>
-    <li *ngFor="let produto of produtos">
-        <strong>{{ produto.nome }}</strong>
-        Descrição: {{ produto.descricao }}
-        Preço: R$ {{ produto.preco }}
-        Quantidade em Estoque: {{ produto.quantidadeEstoque }}
-        Unidade de Medida: {{ produto.unidadeMedida }}
-        Fornecedor: {{ produto.fornecedor}}
-        Ativo: {{ produto.ativo ? 'Sim' : 'Não' }}
-    </li>
-</ul>
+<table class="lista-produtos">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Descrição</th>
+      <th>Preço</th>
+      <th>Quantidade em Estoque</th>
+      <th>Unidade de Medida</th>
+      <th>Fornecedor</th>
+      <th>Ativo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let produto of produtos">
+      <td>{{ produto.nome }}</td>
+      <td>{{ produto.descricao }}</td>
+      <td>R$ {{ produto.preco }}</td>
+      <td>{{ produto.quantidadeEstoque }}</td>
+      <td>{{ produto.unidadeMedida }}</td>
+      <td>{{ produto.fornecedor }}</td>
+      <td>{{ produto.ativo ? "Sim" : "Não" }}</td>
+    </tr>
+  </tbody>
+</table>
