@@ -1,70 +1,69 @@
-<div *ngIf="exibirFormulario">
-  <h2>Cadastro de Produtos</h2>
-  <form (ngSubmit)="cadastrarProduto()" class="formulario">
-    <label for="nome">Nome: </label>
-    <input
-      type="text"
-      id="nome"
-      name="nome"
-      [(ngModel)]="novoProduto.nome"
-      required
-    />
+<h2>Cadastro de Produtos</h2>
+<form (ngSubmit)="cadastrarProduto()" class="formulario">
+  <label for="nome">Nome: </label>
+  <input
+    type="text"
+    id="nome"
+    name="nome"
+    [(ngModel)]="novoProduto.nome"
+    required
+  />
 
-    <label for="preco">Preço: </label>
-    <input
-      type="number"
-      id="preco"
-      name="preco"
-      [(ngModel)]="novoProduto.preco"
-      required
-    />
+  <label for="preco">Preço: </label>
+  <input
+    type="number"
+    id="preco"
+    name="preco"
+    [(ngModel)]="novoProduto.preco"
+    required
+  />
 
-    <label for="descricao">Descrição: </label>
-    <input
-      type="text"
-      id="descricao"
-      name="descricao"
-      [(ngModel)]="novoProduto.descricao"
-      required
-    />
+  <label for="descricao">Descrição: </label>
+  <input
+    type="text"
+    id="descricao"
+    name="descricao"
+    [(ngModel)]="novoProduto.descricao"
+    required
+  />
 
-    <label for="estoque">Estoque: </label>
-    <input
-      type="number"
-      id="estoque"
-      name="estoque"
-      [(ngModel)]="novoProduto.quantidadeEstoque"
-      required
-    />
+  <label for="estoque">Estoque: </label>
+  <input
+    type="number"
+    id="estoque"
+    name="estoque"
+    [(ngModel)]="novoProduto.quantidadeEstoque"
+    required
+  />
 
-    <label for="unidadeMedida">Unidade de Medida: </label>
-    <select
-      id="unidadeMedida"
-      name="unidadeMedida"
-      [(ngModel)]="novoProduto.unidadeMedida"
-      required
-    >
-      <option value="quilometro">Unidade</option>
-      <option value="metro">Quilograma (kg)</option>
-      <option value="centimetro">Litro (L)</option>
-      <option value="decimetro">Metro (m)</option>
-      <option value="milimetro">Unidade 5</option>
-    </select>
-    <label for="fornecedor">Fornecedor: </label>
-    <select
-      id="fornecedor"
-      name="fornecedor"
-      [(ngModel)]="novoProduto.fornecedor"
-      required
-    >
-      <option value="op1">S.I Canetas</option>
-      <option value="op2">S.I Leite</option>
-      <option value="op3">S.I Farinha</option>
-      <option value="op4">S.I Laptops</option>
-      <option value="op5">S.I Frutas</option>
-    </select>
+  <label for="unidadeMedida">Unidade de Medida: </label>
+  <select
+    id="unidadeMedida"
+    name="unidadeMedida"
+    [(ngModel)]="novoProduto.unidadeMedida"
+    required
+  >
+    <option>Unidade</option>
+    <option value="metro">Quilograma (kg)</option>
+    <option value="centimetro">Litro (L)</option>
+    <option value="decimetro">Metro (m)</option>
+    <option value="milimetro">Unidade 5</option>
+  </select>
+  <label for="fornecedor">Fornecedor: </label>
+  <select
+    id="fornecedor"
+    name="fornecedor"
+    [(ngModel)]="novoProduto.fornecedor"
+    required
+  >
+    <option value="op1">S.I Canetas</option>
+    <option value="op2">S.I Leite</option>
+    <option value="op3">S.I Farinha</option>
+    <option value="op4">S.I Laptops</option>
+    <option value="op5">S.I Frutas</option>
+  </select>
 
-    <div class="btAtivo">
+  <div class="btAtivo">
     <label for="ativo" class="ativo-label">Ativo:</label>
     <input
       type="checkbox"
@@ -74,10 +73,9 @@
       required
       class="ativo-checkbox"
     />
-    </div>
+  </div>
 
-    <br>
+  <br />
 
-    <button type="submit">Salvar</button>
-  </form>
-</div>
+  <button type="submit">Salvar</button>
+</form>

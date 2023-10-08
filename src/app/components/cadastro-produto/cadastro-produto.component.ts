@@ -9,7 +9,6 @@ import { Produto } from "src/app/produto.model";
 })
 export class CadastroProdutoComponent {
   produtos: Produto[] = [];
-  exibirFormulario = true;
   novoProduto: Produto = new Produto("", 0, "", 0, "", "", false);
   constructor(private produtoService: ProdutoService) {}
   cadastrarProduto() {
@@ -17,6 +16,5 @@ export class CadastroProdutoComponent {
     this.produtoService.adicionarProduto(this.novoProduto);
     this.produtos.push(this.novoProduto);
     this.novoProduto = new Produto("", 0, "", 0, "", "", false);
-    this.exibirFormulario = false;
   }
 }
