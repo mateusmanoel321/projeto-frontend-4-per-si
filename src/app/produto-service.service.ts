@@ -1,4 +1,3 @@
-// produto.service.ts
 import { Injectable } from '@angular/core';
 import { Produto } from './produto.model';
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ProdutoService } from 'src/app/produto-service.service';
-import { Produto } from 'src/app/produto.model';
+import { ProdutoService } from '../../../app/produto-service.service';
+import { Produto } from '../../../app/produto.model';
 
 @Component({
 	selector: 'app-cadastro-produto',

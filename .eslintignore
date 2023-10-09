@@ -1,0 +1,6 @@
+# eslint
+.angular
+.vscode
+node_modules
+src/favicon.ico
+src/assets
