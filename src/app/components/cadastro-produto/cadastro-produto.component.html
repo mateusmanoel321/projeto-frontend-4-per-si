@@ -13,59 +13,64 @@
     <label for="preco">Preço: </label>
     <input
       type="number"
+      step="0.01"
       id="preco"
       name="preco"
       [(ngModel)]="novoProduto.preco"
       required
     />
 
-  <label for="descricao">Descrição: </label>
-  <input
-    type="text"
-    id="descricao"
-    name="descricao"
-    [(ngModel)]="novoProduto.descricao"
-    required
-  />
+    <label for="descricao">Descrição: </label>
+    <input
+      type="text"
+      id="descricao"
+      name="descricao"
+      [(ngModel)]="novoProduto.descricao"
+      required
+    />
 
-  <label for="estoque">Estoque: </label>
-  <input
-    type="number"
-    id="estoque"
-    name="estoque"
-    [(ngModel)]="novoProduto.quantidadeEstoque"
-    required
-  />
+    <label for="estoque">Estoque: </label>
+    <input
+      type="number"
+      id="estoque"
+      name="estoque"
+      [(ngModel)]="novoProduto.quantidadeEstoque"
+      required
+    />
 
     <label for="unidadeMedida">Unidade de Medida: </label>
     <select
+      default=""
       id="unidadeMedida"
       name="unidadeMedida"
       [(ngModel)]="novoProduto.unidadeMedida"
       required
     >
-      <option value="quilometro">Unidade</option>
-      <option value="metro">Quilograma (kg)</option>
-      <option value="centimetro">Litro (L)</option>
-      <option value="decimetro">Metro (m)</option>
-      <option value="milimetro">Unidade 5</option>
+      <option value="" disabled>Escolha uma opção</option>
+      <option value="kg">Quilômetro (kg)</option>
+      <option value="cx">Caixa (cx)</option>
+      <option value="l">Litro (l)</option>
+      <option value="m">Metro (m)</option>
+      <option value="px">Pixel (px)</option>
     </select>
     <label for="fornecedor">Fornecedor: </label>
     <select
+      default=""
       id="fornecedor"
       name="fornecedor"
       [(ngModel)]="novoProduto.fornecedor"
       required
     >
-      <option value="op1">S.I Canetas</option>
-      <option value="op2">S.I Leite</option>
-      <option value="op3">S.I Farinha</option>
-      <option value="op4">S.I Laptops</option>
-      <option value="op5">S.I Frutas</option>
+      <option value="" disabled>Escolha uma opção</option>
+      <option value="S.I. Canetas">S.I. Canetas</option>
+      <option value="S.I. Leite">S.I. Leite</option>
+      <option value="S.I. Farinha">S.I. Farinha</option>
+      <option value="S.I. Laptops">S.I. Laptops</option>
+      <option value="S.I. Frutas">S.I. Frutas</option>
     </select>
 
     <div class="btAtivo">
-    <label for="ativo" class="ativo-label">Ativo:</label>
+    <label for="ativo" class="ativo-label">Ativo: </label>
     <input
       type="checkbox"
       id="ativo"
@@ -73,10 +78,14 @@
       [(ngModel)]="novoProduto.ativo"
       class="ativo-checkbox"
     />
-  </div>
+    </div>
 
     <br>
-
-    <button type="submit">Salvar</button>
+    <div id="divBotoes">
+      <button type="submit">Salvar</button>
+      <div id="divMeioBotoes"></div>
+      <button type="button" routerLink="/listagem-produto">Listar Produtos</button>
+    </div>
   </form>
 </div>
+
