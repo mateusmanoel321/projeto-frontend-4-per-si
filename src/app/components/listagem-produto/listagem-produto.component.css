@@ -23,3 +23,14 @@
 .lista-produtos tr:hover {
   background-color: #ddd;
 }
+
+button[type="button"] {
+  background-color: #007bff;
+  width: 14%;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
